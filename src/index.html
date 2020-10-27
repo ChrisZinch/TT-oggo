@@ -3,11 +3,68 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon.png"
+    >
+    <title>oggo</title>
+    <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header>
+      <div class="menu__wrapper">
+        <input
+          type="checkbox"
+          id="menu__toggle"
+          class="menu__toggle"
+        >
+        <label class="menu__btn" for="menu__toggle">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </label>
+        <div class="menu__box"></div>
+      </div>
+    </header>
+    <main>
+      <div class="squere__wrapper">
+        <div class="squere">
+          <div class="squere__side squere__side--front">
+            <img
+              class="side-img"
+              src="images/side1.jpeg"
+              alt="apple"
+            >
+          </div>
+          <div class="squere__side squere__side--back">
+            <video
+              class="side-video"
+              playsinline="true"
+              autoplay
+              muted
+              loop
+            >
+              <source src="./prod.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="squere__side squere__side--right">
+            <img
+              class="side-img"
+              src="images/side3.jpg"
+              alt="apple"
+            >
+          </div>
+          <div class="squere__side squere__side--left">
+            <img
+              class="side-img"
+              src="images/side-4.jpg"
+              alt="apple"
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
   </body>
 </html>
